@@ -1,26 +1,37 @@
-html,body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-    color:#4d4d4d;
-    height: 100%;
-}
 
-.main{
-    height: 100%;
-}
 
-.header,.footer{
-    padding: 0 20px;
-    color:#fff;
-    background-color: #777777;
-    height: 50px;
-    line-height: 50px;
-    
-}
-.body{
-    height: calc(100% - 100px);
-    padding: 20px;
-    box-sizing: border-box;
-}
+
+// Sass utilities
+// @import "helpers/variables";
+// @import "helpers/functions";
+// @import "helpers/mixins";
+// @import "helpers/placeholders";
+ 
+// Vendors and external stylesheets
+// @import "vendors/bootstrap";
+// @import "vendors/jquery-ui";
+ 
+// Base stuff
+@import "base/reset";
+// @import "base/typography";
+ 
+// Layout related stylesheets
+// @import "layout/grid";
+// @import "layout/header";
+// @import "layout/footer";
+// @import "layout/sidebar";
+ 
+// Components and modules
+// @import "components/carousel";
+// @import "components/buttons";
+// @import "components/cover";
+// @import "components/dropdown";
+ 
+// Page-specific stylesheets
+@import "pages/home";
+
+// @import "pages/contact";
+ 
+// Themes
+// @import "themes/theme";
+// @import "themes/admin";

@@ -2,7 +2,8 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const path = require('path');
+const ROOT_PATH = path.resolve(__dirname);
 module.exports = merge(common, {
     mode: 'development',   
     devtool: 'inline-source-map',
@@ -12,7 +13,7 @@ module.exports = merge(common, {
     },  
     module: {
         rules: [{
-            test: /\.scss$/,
+            test: /\.scss$,\.css$/,
             use: [{
                 loader: "style-loader"
             }, {
